@@ -1,36 +1,49 @@
-<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Arca Sobrevivente — guias de sobrevivência</title><meta name="description" content="Guias práticos para apagões, desastres e emergências.">
-<style>
-:root{--bg:#0d0d0d;--card:#171717;--txt:#f2efe8;--mut:#a9a39a;--ouro:#e0b24a;--verm:#d63b2f;--ok:#3cb371}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-.w{max-width:960px;margin:0 auto;padding:0 16px}header{padding:14px 0;border-bottom:1px solid #262626}
-header .w{display:flex;align-items:center;justify-content:space-between}.marca{font-weight:800;letter-spacing:.5px;color:var(--ouro)}
-.hero{padding:34px 0 10px}.hero h1{font-size:clamp(26px,5vw,42px);line-height:1.15;margin:0 0 14px}
-.alerta{display:inline-block;background:var(--verm);color:#fff;font-weight:800;font-size:13px;padding:5px 10px;border-radius:4px;margin-bottom:14px;letter-spacing:.4px}
-.hero p{color:var(--mut);font-size:18px;max-width:720px}
-.livro{display:grid;grid-template-columns:1fr 1.15fr;gap:28px;background:var(--card);border-radius:14px;padding:22px;margin:26px 0}
-@media(max-width:720px){.livro{grid-template-columns:1fr}}
-.livro img{width:100%;border-radius:10px;display:block}.livro h2{margin:0 0 4px;font-size:28px}.sub{color:var(--mut);margin:0 0 12px}
-.livro ul{padding-left:18px;margin:0 0 16px}.livro li{margin:6px 0}
-.opcoes{display:grid;gap:10px;margin:14px 0}.op{border:2px solid #333;border-radius:10px;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;cursor:pointer}
-.op.on{border-color:var(--ouro);background:#1f1b12}.op b{font-size:20px}.op small{display:block;color:var(--mut)}
-.btn{display:block;width:100%;text-align:center;background:var(--ouro);color:#111;font-weight:800;font-size:18px;padding:15px;border:0;border-radius:10px;cursor:pointer;text-decoration:none}
-.btn:hover{filter:brightness(1.08)}.mini{color:var(--mut);font-size:13px;margin-top:8px;text-align:center}
-.ck{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;padding:26px 0}@media(max-width:720px){.ck{grid-template-columns:1fr}.ck .res{order:-1}}
-.ck form,.ck .res{background:var(--card);border-radius:14px;padding:20px}label{display:block;font-size:14px;color:var(--mut);margin:10px 0 4px}
-input{width:100%;padding:12px;border-radius:8px;border:1px solid #333;background:#0f0f0f;color:var(--txt);font-size:16px}
-.linha{display:flex;justify-content:space-between;margin:8px 0}.tot{font-size:22px;font-weight:800;border-top:1px solid #333;padding-top:10px}
-.aviso{background:#1f1b12;border:1px solid var(--ouro);border-radius:10px;padding:14px;margin-top:14px;display:none}
-footer{color:#6d6862;font-size:12px;padding:30px 0;text-align:center}
-</style><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','2403134820103341');fbq('track','PageView');
-window.SITE='inicio';</script></head><body><main class="w" style="max-width:520px;padding:50px 16px;text-align:center">
-<p class="marca" style="font-size:22px">ARCA SOBREVIVENTE</p><h1 style="font-size:24px">Escolha o seu país · Elige tu país</h1><a class="btn" style="margin:10px 0" href="eua/">🇺🇸 EUA · Português</a><a class="btn" style="margin:10px 0" href="portugal-br/">🇵🇹 Portugal · Português (Brasil)</a><a class="btn" style="margin:10px 0" href="japao/">🇯🇵 Japão · Português</a><a class="btn" style="margin:10px 0" href="pt/">🇵🇹 Portugal · Português (PT)</a><a class="btn" style="margin:10px 0" href="es/">🇪🇸 España · Español</a></main>
-<script>(function(){var tz=(Intl.DateTimeFormat().resolvedOptions().timeZone||''),l=(navigator.language||'').toLowerCase(),d=null;
-if(/^es/.test(l)&&/^Europe\/Madrid|^Atlantic\/Canary|^Africa\/Ceuta/.test(tz))d='es';
-else if(/^Asia\/Tokyo/.test(tz)&&/^pt/.test(l))d='japao';
+<!doctype html><html lang="pt"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Arca Sobrevivente — guias de sobrevivência</title><meta name="description" content="Guias práticos para apagões, desastres e emergências."><link rel="icon" href="/img/v2/apagao_07_d175d5.webp"><style>:root{--cor:#a8331e;--botao:#f39a43}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font:16px/1.6 'Segoe UI',system-ui,-apple-system,Roboto,sans-serif;color:#1d1d1f;background:#fff}
+img{max-width:100%;display:block}a{color:inherit}.w{max-width:1100px;margin:0 auto;padding:0 16px}
+.topo{background:#fff;border-bottom:1px solid #e6e6e6;position:sticky;top:0;z-index:20}.topo .w{display:flex;align-items:center;justify-content:space-between;height:62px}
+.topo img{height:46px;width:auto}.topo select{border:1px solid #ccc;border-radius:8px;padding:6px;font-size:13px;max-width:55%;background:#fff;color:#222}
+.alerta{background:#1b1b1b;color:#ffd7a8;font-size:14px;text-align:center;padding:10px 16px}.alerta b{color:#ff6a3d}
+.hero{position:relative;color:#fff;padding:36px 0 46px;background-size:cover;background-position:center}.hero:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.55)}
+.hero>*{position:relative}.hero h2{text-align:center;font-size:clamp(22px,4vw,30px);margin:0 0 14px}
+.capas{display:flex;justify-content:center;align-items:flex-end;gap:6px;margin:0 auto 18px;max-width:560px}.capas img{width:48%;filter:drop-shadow(0 14px 18px rgba(0,0,0,.6))}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:720px;margin:0 auto}.cards.um{grid-template-columns:1fr;max-width:360px}
+@media(max-width:620px){.cards{grid-template-columns:1fr}}
+.card{border:1px solid rgba(255,255,255,.75);background:rgba(0,0,0,.35);border-radius:4px;padding:16px;text-align:center}
+.card h3{margin:0;font-weight:400;font-size:28px}.card .de{font-size:14px;font-weight:700}.card .de s{opacity:.85}.card .por{color:#f39a43;font-size:30px;line-height:1.2;margin:2px 0 8px}
+.card small{display:block;font-size:12px;margin-bottom:8px}
+.btn{display:inline-block;background:var(--botao);color:#111;font-weight:800;border:0;border-radius:30px;padding:12px 26px;text-decoration:none;cursor:pointer;font-size:17px;box-shadow:0 3px 10px rgba(0,0,0,.25)}
+.btn.bloco{display:block;width:100%}.btn.verm{background:var(--cor);color:#fff}.btn:hover{filter:brightness(1.07)}
+.sec{padding:46px 0}.claro{background:#f7f7f7}.titulo{text-align:center;color:var(--cor);font-size:clamp(24px,4vw,34px);margin:0;letter-spacing:.5px}
+.subt{text-align:center;color:var(--cor);font-size:clamp(19px,3vw,24px);margin:2px 0 26px}
+.intro{display:grid;grid-template-columns:.8fr 1.2fr;gap:28px;align-items:center}@media(max-width:760px){.intro{grid-template-columns:1fr}.intro img{max-width:300px;margin:auto}}
+.intro p{color:#444;text-align:justify}.centro{text-align:center;margin-top:24px}
+.escura{position:relative;color:#fff;background-size:cover;background-position:center}.escura:before{content:"";position:absolute;inset:0;background:rgba(0,0,0,.62)}.escura>*{position:relative}
+.selo-t{display:inline-block;background:#fff;color:#111;font-weight:800;padding:4px 12px;font-size:clamp(18px,3vw,24px);margin-bottom:18px}
+.lista{list-style:none;padding:0;margin:0 0 20px}.lista li{margin:7px 0;padding-left:30px;position:relative}.lista li:before{content:"✅";position:absolute;left:0}
+.lista.check li:before{content:"✔";font-weight:800}.aviso{font-size:15px;line-height:1.65}
+.dif h3{text-align:center;text-decoration:underline;font-weight:500;color:#222;margin:0 0 18px}
+.galeria{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}@media(max-width:760px){.galeria{grid-template-columns:repeat(2,1fr)}}
+.galeria img{width:100%;aspect-ratio:3/4;object-fit:cover;border-radius:10px}
+.av{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}@media(max-width:860px){.av{grid-template-columns:1fr 1fr}}@media(max-width:560px){.av{grid-template-columns:1fr}}
+.av .c{background:#fff;border:1px solid #e9e9e9;border-radius:12px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.05)}.av .c img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.av .c div{padding:12px 14px}.est{color:#f5a623;letter-spacing:2px}.av .n{font-weight:700}.av .v{color:#2e8b57;font-size:12px;font-weight:700}.av p{margin:6px 0 0;color:#333;font-size:15px}
+.leg{text-align:center;color:#777;font-size:13px;margin:-14px 0 20px}
+.gar{display:grid;grid-template-columns:.45fr 1fr;gap:26px;align-items:center}@media(max-width:760px){.gar{grid-template-columns:1fr}.gar img{max-width:220px;margin:auto}}
+.gar h3{text-decoration:underline;font-weight:500;font-size:clamp(18px,2.6vw,22px)}
+.estr h3{text-align:center;text-decoration:underline;font-weight:500;margin:0 0 20px}.estr .g{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid #333}
+@media(max-width:760px){.estr .g{grid-template-columns:1fr}}.estr .g div{border:1px solid #333}.estr img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.estr p{text-align:center;font-weight:700;font-size:18px;margin:12px 10px 18px}
+.faq h3{text-align:center;font-size:26px;font-weight:500}.faq details{border-bottom:1px solid #ccc;padding:14px 4px}.faq summary{cursor:pointer;font-size:15px;list-style:none;display:flex;justify-content:space-between}
+.faq summary:after{content:"⌄";font-size:20px;line-height:1}.faq details[open] summary:after{content:"⌃"}.faq details p{color:#555;font-size:14px;margin:10px 0 0}
+.outro{display:flex;gap:18px;align-items:center;justify-content:center;flex-wrap:wrap}.outro img{width:150px}
+footer{background:#1e2430;color:#cfd3da;text-align:center;font-size:13px;padding:30px 16px;line-height:1.7}
+.barra{position:fixed;bottom:0;left:0;right:0;background:#111;padding:10px 16px;display:none;z-index:30;box-shadow:0 -4px 14px rgba(0,0,0,.3)}
+@media(max-width:760px){.barra{display:block}body{padding-bottom:70px}}
+</style><script>!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');fbq('init','2403134820103341');fbq('track','PageView');window.SITE='inicio';</script></head><body><section class="sec claro" style="min-height:100vh"><div class="w" style="max-width:760px"><img src="/img/v2/apagao_07_d175d5.webp" alt="" style="width:90px;margin:0 auto 10px"><h1 class="titulo" style="margin-bottom:6px">Arca Sobrevivente</h1><p style="text-align:center;color:#555;margin:0 0 22px">Escolha o seu país e idioma · Choose your country and language · 国と言語を選択 · Elige tu país</p><div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px"><div style="background:#fff;border-radius:14px;padding:16px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.06)"><img src="/img/flags/us.png" alt="" style="width:64px;margin:0 auto 8px;border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.15)"><b style="font-size:18px">Estados Unidos · United States</b><div style="margin-top:8px"><a class="btn" style="margin:4px;font-size:15px;padding:9px 16px" href="/eua/livros.html">Português (Brasil)</a><a class="btn" style="margin:4px;font-size:15px;padding:9px 16px" href="/eua-en/livros.html">English</a></div></div><div style="background:#fff;border-radius:14px;padding:16px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.06)"><img src="/img/flags/pt.png" alt="" style="width:64px;margin:0 auto 8px;border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.15)"><b style="font-size:18px">Portugal</b><div style="margin-top:8px"><a class="btn" style="margin:4px;font-size:15px;padding:9px 16px" href="/pt/livros.html">Português (Portugal)</a><a class="btn" style="margin:4px;font-size:15px;padding:9px 16px" href="/portugal-br/livros.html">Português (Brasil)</a></div></div><div style="background:#fff;border-radius:14px;padding:16px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.06)"><img src="/img/flags/jp.png" alt="" style="width:64px;margin:0 auto 8px;border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.15)"><b style="font-size:18px">Japão · 日本</b><div style="margin-top:8px"><a class="btn" style="margin:4px;font-size:15px;padding:9px 16px" href="/japao/livros.html">Português (Brasil)</a><a class="btn" style="margin:4px;font-size:15px;padding:9px 16px" href="/japao-ja/livros.html">日本語</a></div></div><div style="background:#fff;border-radius:14px;padding:16px;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.06)"><img src="/img/flags/es.png" alt="" style="width:64px;margin:0 auto 8px;border-radius:4px;box-shadow:0 0 0 1px rgba(0,0,0,.15)"><b style="font-size:18px">España</b><div style="margin-top:8px"><a class="btn" style="margin:4px;font-size:15px;padding:9px 16px" href="/es/livros.html">Español</a></div></div></div></div></section><script>(function(){var tz=(Intl.DateTimeFormat().resolvedOptions().timeZone||''),l=(navigator.language||'').toLowerCase(),d=null;
+if(/^Asia\/Tokyo/.test(tz))d=/^ja/.test(l)?'japao-ja':(/^pt/.test(l)?'japao':null);
+else if(/^Europe\/Madrid|^Atlantic\/Canary|^Africa\/Ceuta/.test(tz))d=/^es/.test(l)?'es':null;
 else if(/^Europe\/Lisbon|^Atlantic\/(Azores|Madeira)/.test(tz))d=(l==='pt-br')?'portugal-br':(/^pt/.test(l)?'pt':null);
-else if(/^America\/(New_York|Chicago|Denver|Los_Angeles|Phoenix|Anchorage|Detroit|Boise|Indiana|Kentucky)|^Pacific\/Honolulu/.test(tz)&&/^pt/.test(l))d='eua';
-if(d&&!sessionStorage.getItem('escolheu'))location.replace(d+'/'+location.search);
+else if(/^America\/(New_York|Chicago|Denver|Los_Angeles|Phoenix|Anchorage|Detroit|Boise|Indiana|Kentucky)|^Pacific\/Honolulu/.test(tz))d=/^pt/.test(l)?'eua':(/^en/.test(l)?'eua-en':null);
+if(d&&!sessionStorage.getItem('escolheu'))location.replace(d+'/livros.html'+location.search);
 document.querySelectorAll('a.btn').forEach(function(a){a.onclick=function(){sessionStorage.setItem('escolheu','1')}});})();</script></body></html>
