@@ -34,7 +34,7 @@ window.SITE='pt';</script></head><body>
 <p></p><button class="btn" type="submit">Ir para o pagamento seguro</button><p class="mini">Pagamento seguro por cartão, Apple Pay ou Google Pay<br>7 dias de garantia: se não gostar, devolvemos o seu dinheiro.</p>
 <div class="aviso" id="aviso"></div></form>
 <div class="res"><h3 style="margin-top:0">A sua encomenda</h3><div id="item"></div><div class="linha tot"><span>Total</span><span id="tot"></span></div></div></div></main>
-<footer>© Arca Sobrevivente · Holding Ramos Reis LTDA</footer>
+<footer>© Arca Sobrevivente · Capital Ramos Reis LTDA</footer>
 <script>
 var D={"moeda": "EUR", "precos": {"manual": {"ebook": 11.9, "fisico": 55.0}, "qtp": {"ebook": 8.9, "fisico": 32.0}}, "nomes": {"qtp": "Quando Tudo Para", "manual": "Manual de Sobrevivência"}, "formatos": {"ebook": "E-book (PDF)", "fisico": "Livro físico"}, "links": {}, "pais": "Portugal", "aguarde": "Estamos a ativar o pagamento em euros. A sua encomenda foi guardada e enviaremos o link de pagamento por e-mail em até 24 horas.", "webhook": "https://n8nwebhook.engenhariajg.com/webhook/pedido-global", "fmt": ["€ ", 2, ",", "."]};var q=new URLSearchParams(location.search);
 var livro=q.get('livro')||Object.keys(D.nomes)[0],formato=q.get('formato')||'ebook';if(!D.precos[livro])livro=Object.keys(D.nomes)[0];
